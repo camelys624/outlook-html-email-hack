@@ -15,17 +15,17 @@ nodemailer.createTestAccount(async (err, account) => {
 
     // Create a SMTP transport object
     let transporter = nodemailer.createTransport({
-        host: "smtp.163.com",
+        host: "smtp.mailtrap.io",
         port: 25,
         auth: {
-            user: "camel_yangz@163.com",
-            pass: "RBDLINMYUBNWZCNI"
+            user: "c88026bf6cb6fb",
+            pass: "06d8b2f66cec7b"
         }
     },{
         // default message fields
 
         // sender info
-        from: 'camel_yangz@163.com',
+        from: 'aaa.cc.com',
         headers: {
             'X-Laziness-level': 1000 // just an example header, no need to use this
         }
@@ -34,8 +34,7 @@ nodemailer.createTestAccount(async (err, account) => {
     // Message object
     let message = {
         // Comma separated list of recipients
-        to: ['camel_yangz@163.com', 'robbie.yang@hp.com', '1608367612@qq.com'],
-        cc: 'camel_yangz@163.com',
+        to: 'aad.cc.aa',
 
         // Subject of the message
         subject: 'Nodemailer is unicode friendly ✔' + Date.now(),
