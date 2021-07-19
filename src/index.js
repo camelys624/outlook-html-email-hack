@@ -25,7 +25,9 @@ nodemailer.createTestAccount(async (err, account) => {
         // default message fields
 
         // sender info
-        from: 'aaa.cc.com',
+        // sender info
+        // sender info
+        from: 'aa.cc@ss',
         headers: {
             'X-Laziness-level': 1000 // just an example header, no need to use this
         }
@@ -34,7 +36,7 @@ nodemailer.createTestAccount(async (err, account) => {
     // Message object
     let message = {
         // Comma separated list of recipients
-        to: 'aad.cc.aa',
+        to: 'dsa.aad@ds',
 
         // Subject of the message
         subject: 'Nodemailer is unicode friendly ✔' + Date.now(),
@@ -43,7 +45,7 @@ nodemailer.createTestAccount(async (err, account) => {
         text: 'Hello to myself!',
 
         // HTML body
-        html: await createEmail(),
+        html: await createEmail(6),
 
         list: {
             // List-Help: <mailto:admin@example.com?subject=help>
